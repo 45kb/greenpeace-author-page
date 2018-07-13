@@ -8,11 +8,12 @@
       list-style: none;
       img {
         float: left;
-        padding: 20px;
-        border-radius: 100px;
+        transition: .1s all ease-in-out;
+        padding: 10px;
+        border-radius: 110px;
         margin-top: -25px;
         width: 100%;
-        max-width: 250px;
+        max-width: 290px;
       }
       h1 {
         font-size: 22px;
@@ -22,4 +23,16 @@
     }
   }
 
+}
+
+@media (max-width: 400px) {
+  .author {
+    ul {
+      li {
+        img {
+          margin-left: -120px;
+        }
+      }
+    }
+  }
 }
