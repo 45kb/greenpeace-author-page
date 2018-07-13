@@ -23,11 +23,18 @@
     }
   }
 }
+.article-list-item-image {
+  margin-bottom: 10px;
+}
+.article-list-item {
+  padding-top: 15px;
+}
 
 .author-articles {
   background: white;
-  margin-top: 20px;
-  padding: 10px 0;
+  margin-top: 50px;
+  margin: 30px 0;
+  padding: 15px 5px;
 }
 
 @media (max-width: 400px) {
@@ -36,6 +43,8 @@
       li {
         img {
           margin-left: -120px;
+          width: 70%;
+          margin-top: inherit;
         }
       }
     }
