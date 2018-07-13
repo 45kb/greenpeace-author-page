@@ -1,0 +1,139 @@
+.single-post {
+  .skewed-overlay {
+    &:before {
+      background: $grey-light;
+    }
+
+    mask-image: none;
+  }
+
+  .page-header {
+    padding: 90px 0 20px;
+
+    @include medium-and-up {
+      padding: 104px 0 26px;
+    }
+
+    @include large-and-up {
+      padding: 144px 0 30px;
+    }
+
+    @include x-large-and-up {
+      padding: 144px 0 40px;
+    }
+
+    .page-header-title {
+      max-width: 100%;
+    }
+
+    .page-header-background {
+      opacity: .3;
+    }
+
+    h1 {
+      color: $black;
+      hyphens: none;
+      line-height: 1.2;
+
+      @include x-large-and-up {
+        line-height: 1.1;
+        font-size: rem(56);
+        margin-bottom: 20px;
+      }
+    }
+
+    .top-page-tags a {
+      color: $blue;
+      font-size: rem(14);
+      margin-bottom: 6px;
+
+      @include medium-and-up {
+        font-size: rem(16);
+      }
+    }
+
+    .tag-item {
+      display: inline-block;
+    }
+
+    .single-post-meta {
+      color: $dark-shade-black;
+      margin: 0 0 16px 0;
+      font-size: rem(13);
+      font-weight: 300;
+
+      a {
+        color: inherit;
+      }
+
+      span.separator {
+        margin: 0 5px;
+      }
+
+      span.comment-link {
+        cursor: pointer;
+
+        img {
+          width: 14px;
+          margin-right: 3px;
+        }
+
+        .quantity {
+          text-decoration: underline;
+          @include large-and-up {
+            text-decoration: none;
+          }
+        }
+
+        .quantity:hover {
+          text-decoration: underline;
+        }
+
+        .display-text {
+          visibility: hidden;
+
+          @include medium-and-up {
+            visibility: unset;
+          }
+        }
+      }
+
+      @include medium-and-up {
+        font-size: rem(14);
+        font-weight: 300;
+        color: $grey-60;
+        margin: 0;
+      }
+
+      @include large-and-up {
+        font-size: rem(15);
+        margin: -10px 0 0 0;
+      }
+
+      @include x-large-and-up {
+        margin: 0;
+        font-size: rem(16);
+      }
+    }
+
+    .single-post-author,
+    .single-post-time {
+      font-style: italic;
+      display: inline-block;
+      margin: 0;
+    }
+
+    .single-post-author {
+      margin-right: 20px;
+      position: relative;
+
+      &:after {
+        content: "\2022";
+        pointer-events: none;
+        display: inline-block;
+        position: absolute;
+        right: -15px;
+      }
+    }
+  }
+}
