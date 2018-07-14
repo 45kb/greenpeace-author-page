@@ -8,10 +8,10 @@
       list-style: none;
       img {
         float: left;
-        transition: .1s all ease-in-out;
+        transition: .25s all ease-in-out;
         padding: 10px;
-        border-radius: 110px;
-        margin-top: -25px;
+        border-radius: 110px 90px 0px 90px;
+        margin-top: -15px;
         width: 100%;
         max-width: 290px;
       }
@@ -28,6 +28,9 @@
 }
 .article-list-item {
   padding-top: 15px;
+  h4 {
+    color: $dark-blue;
+  }
 }
 
 .author-articles {
@@ -42,8 +45,10 @@
     ul {
       li {
         img {
-          margin-left: -120px;
+          margin-left: -100px;
+          margin-right: 10px;
           width: 70%;
+          border-radius: 110px;
           margin-top: inherit;
         }
       }
