@@ -1,5 +1,7 @@
+// Scroll to top button if present in page
+$(document).ready(function() {
 if ($('.back-to-top').length) {
-    var scrollTrigger = $(window).height, // px
+    var scrollTrigger = $(window).height(), // px
         backToTop = function () {
             var scrollTop = $(window).scrollTop();
             if (scrollTop > scrollTrigger) {
@@ -16,6 +18,7 @@ if ($('.back-to-top').length) {
         e.preventDefault();
         $('html,body').animate({
             scrollTop: 0
-        }, 400);
+        }, 700);
     });
 }
+});
