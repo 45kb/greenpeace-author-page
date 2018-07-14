@@ -1,7 +1,7 @@
 // Scroll to top button if present in page
 $(document).ready(function() {
 if ($('.back-to-top').length) {
-    var scrollTrigger = 0,
+    var scrollTrigger = $(window).height(),
         backToTop = function () {
             var scrollTop = $(window).scrollTop();
             if (scrollTop > scrollTrigger) {
