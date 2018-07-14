@@ -1,5 +1,6 @@
 if ($('.back-to-top').length) {
-    var scrollTrigger = $(window).height, // px
+  alert($(window).height);
+    var scrollTrigger = $(window).height + 200, // px
         backToTop = function () {
             var scrollTop = $(window).scrollTop();
             if (scrollTop > scrollTrigger) {
@@ -16,6 +17,6 @@ if ($('.back-to-top').length) {
         e.preventDefault();
         $('html,body').animate({
             scrollTop: 0
-        }, 700);
+        }, 400);
     });
 }
