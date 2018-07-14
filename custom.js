@@ -1,5 +1,7 @@
+// Scroll to top button if present in page
+$(document).ready(function() {
 if ($('.back-to-top').length) {
-    var scrollTrigger = $(window).height(), // px
+    var scrollTrigger = 0,
         backToTop = function () {
             var scrollTop = $(window).scrollTop();
             if (scrollTop > scrollTrigger) {
@@ -19,6 +21,7 @@ if ($('.back-to-top').length) {
         }, 700);
     });
 }
+});
 
 // Underline headlines on thumbnail hover.
 
