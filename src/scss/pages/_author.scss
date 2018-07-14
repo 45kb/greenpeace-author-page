@@ -10,16 +10,18 @@
         float: left;
         transition: .3s all ease-in-out;
         padding: 10px 20px;
-        border-radius: 110px 90px 0px 90px;
+        border-radius: 100px;
         margin-top: -15px;
         margin-left: -15px;
         width: 100%;
         max-width: 290px;
+        shape-outside: ellipse();
       }
       h1 {
         font-size: 22px;
         font-weight: 500;
         margin-bottom: 10px;
+        text-indent: 3%;
       }
     }
   }
