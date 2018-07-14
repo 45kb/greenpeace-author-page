@@ -1,6 +1,5 @@
 if ($('.back-to-top').length) {
-  alert($(window).height);
-    var scrollTrigger = $(window).height + 200, // px
+    var scrollTrigger = $(window).height, // px
         backToTop = function () {
             var scrollTop = $(window).scrollTop();
             if (scrollTop > scrollTrigger) {
