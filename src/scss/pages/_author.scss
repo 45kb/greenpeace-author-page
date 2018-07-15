@@ -51,7 +51,7 @@
   }
 }
 
-@media (max-width: #{$small-width}) {
+@media (max-width: $small-width) {
   .author {
     ul {
       li {
