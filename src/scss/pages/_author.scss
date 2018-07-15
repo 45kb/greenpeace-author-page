@@ -10,12 +10,16 @@
         float: left;
         transition: .3s all ease-in-out;
         padding: 10px 20px;
-        border-radius: 100px;
+        border-radius: 120px;
         margin-top: -15px;
         margin-left: -15px;
         width: 100%;
         max-width: 290px;
+        //TODO maybe better crossbrowser way (caniuse shape-outside)
         shape-outside: ellipse();
+        //TODO maybe better crossbrowser way (caniuse clip-path)
+        clip-path: ellipse(200% 90px);
+
       }
       h1 {
         font-size: 22px;
