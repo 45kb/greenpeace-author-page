@@ -14,11 +14,11 @@
         margin-top: -15px;
         margin-left: -15px;
         width: 100%;
-        max-width: 290px;
+        max-width: 320px;
         //TODO maybe better a crossbrowser way (caniuse shape-outside)
         shape-outside: ellipse();
         //TODO maybe better a crossbrowser way (caniuse clip-path)
-        clip-path: ellipse(200% 90px);
+        clip-path: ellipse(200% 104px);
       }
       h1 {
         font-size: 22px;
