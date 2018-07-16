@@ -50,25 +50,26 @@
     padding-top: 0;
   }
 }
-
-@media (max-width: $small-width) {
-  .author {
-    ul {
-      li {
-        img {
-          margin-left: -20.5%;
-        }
-      }
-    }
-  }
-}
-
+//resize author image on tablet device width
 @media (max-width: $medium-width) {
   .author {
     ul {
       li {
         img {
           width: 50%;
+        }
+      }
+    }
+  }
+}
+//resize author image on mobile device width
+@media (max-width: $small-width) {
+  .author {
+    ul {
+      li {
+        img {
+          margin-left: -20.5%;
+          border-radius: 0 120px 120px 0;
         }
       }
     }
